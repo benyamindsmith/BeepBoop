@@ -6,7 +6,7 @@ int main ()
 {
   char yesno;
   char word;
-  int nb =rand();
+  int nb =rand()%100;
   
   cout << "Do you have a funny word? [Y/N] \n";
 
@@ -24,7 +24,7 @@ int main ()
       cin >> word;
       if (nb%2 == 1){
           cout << "That word isn't funny. \n";
-      }  if(nb%2 ==0){
+      }  else {
           cout << "Hey, that's kinda funny! \n";
       }
     }
@@ -33,5 +33,5 @@ int main ()
       cout << "Come back when you have a funny word! \n";
     }
 
-
+cout<<nb;
 }
