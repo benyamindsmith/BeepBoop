@@ -1,10 +1,12 @@
 #include <iostream>
 #include <cstdlib>
-#include <stdlib.h>  
+#include <stdlib.h>
+#include <ctime>
 using namespace std;
 
 int main ()
 {
+  srand(time(NULL));
   char yesno;
   char word;
   double nb =rand()%100;
@@ -33,4 +35,6 @@ int main ()
     {
       cout << "Come back when you have a funny word! \n";
     }
+    
+    cout<<nb;
 }
