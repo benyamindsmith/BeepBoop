@@ -17,8 +17,8 @@ int main ()
 
   while ((yesno != 'Y') && (yesno != 'N'))
     {
-      cout <<
-	"Sorry, I did not understand your response. Please Enter Y or N \n";
+      cout << "Sorry, I did not understand your response. Please Enter Y or N. \n";
+	cout << "Do you have a funny word? [Y/N] \n";
       cin >> yesno;
     }
   if (yesno == 'Y')
