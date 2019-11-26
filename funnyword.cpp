@@ -1,12 +1,13 @@
 #include <iostream>
 #include <cstdlib>
+#include <stdlib.h>  
 using namespace std;
 
 int main ()
 {
   char yesno;
   char word;
-  int nb =rand()%100;
+  double nb =rand()%100;
   
   cout << "Do you have a funny word? [Y/N] \n";
 
@@ -22,7 +23,7 @@ int main ()
     {
       cout << "What is the word?\n";
       cin >> word;
-      if (nb%2 == 1){
+      if (nb >50){
           cout << "That word isn't funny. \n";
       }  else {
           cout << "Hey, that's kinda funny! \n";
@@ -32,6 +33,4 @@ int main ()
     {
       cout << "Come back when you have a funny word! \n";
     }
-
-cout<<nb;
 }
