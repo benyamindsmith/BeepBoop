@@ -35,6 +35,4 @@ int main ()
     {
       cout << "Come back when you have a funny word! \n";
     }
-    
-    cout<<nb;
 }
