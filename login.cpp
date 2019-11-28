@@ -1,6 +1,5 @@
 #include <iostream>
 #include <string>
-#include <conio.h>
 
 using namespace std;
 
@@ -28,14 +27,12 @@ int main()
         cin >> username;
         cin.clear(); cin.ignore();
         cout <<"Please create your password:\n";
-        getch();
         cin >> password;
        
     // login
     
            cout << "To login, please enter your username: \n";
            cin >> login;
-           getch();
     if(login!=username){
         cout<<"Invalid username; Please enter a valid username";
         cin >>login;
