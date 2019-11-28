@@ -1,13 +1,13 @@
 #include <iostream>
+#include <string>
+#include <conio.h>
 
 using namespace std;
 
 int main()
 {
     char yesno;
-    char username;
-    char confirmusername;
-    char password;
+    
     
     cout<<"Welcome to Ben's login simulator.\nTo enter, you need to create an account.\n Create account? [Y/N]\n";
     cin >> yesno;
@@ -19,20 +19,30 @@ int main()
     }
     
     if (yesno=='Y'){
-        
+        char username;
+        char password;
+        char login;
+        char pin;
+    // Create account
         cout << "Please create your username:\n";
         cin >> username;
-        
-        cout << "Please confirm your username:\n";
-        
-        cin >> confirmusername;
-        
-        if (username != confirmusername){
-            cout << "ERROR: username and confirmation do not match. Try again";
-            }
-            cout<< "please create password";
-        
-        } else if(yesno=='N'){
+        cin.clear(); cin.ignore();
+        cout <<"Please create your password:\n";
+        getch();
+        cin >> password;
+       
+    // login
+    
+           cout << "To login, please enter your username: \n";
+           cin >> login;
+           getch();
+    if(login!=username){
+        cout<<"Invalid username; Please enter a valid username";
+        cin >>login;
+    }
+    cout << "Please enter your password";
+    cin >> pin;
+    } else if(yesno=='N'){
         cout << "Goodbye for now!";
         
     } 
