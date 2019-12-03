@@ -19,24 +19,23 @@ main ()
 
   if (yesno == 'Y')
     {
-      char username;
-      char password;
-      char login;
-      char pin;
+      string username;
+      string password;
+      string login;
+      string pin;
       // Create account
       cout << "Please create your username:\n";
       cin >> username;
       cin.clear ();
       cin.ignore ();
       cout << "Please create your password:\n";
-      cin >> password;
+      std::getline(std::cin,password);
       cin.clear ();
-      cin.ignore ();
+  
 
-      // login
-
+      //login
       cout << "To login, please enter your username: \n";
-      cin >> login;
+      std::getline(std::cin,login);
       if (login != username)
 	{
 	  cout << "Invalid username; Please enter a valid username\n";
@@ -63,4 +62,3 @@ main ()
 
     }
 }
-
