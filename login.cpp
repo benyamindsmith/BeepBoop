@@ -11,13 +11,13 @@ main ()
     "Welcome to Ben's login simulator.\nTo enter, you need to create an account.\nCreate account? [Y/N]\n";
   cin >> yesno;
 
-  while ((yesno != 'Y') &&(yesno != 'y') && (yesno != 'N')&& (yesno != 'n'))
+  while ((yesno != 'Y')  && (yesno != 'N'))
     {
       cout << "Invalid response.\n Create account? [Y/N]\n";
       cin >> yesno;
     }
 
-  if ((yesno == 'Y') || (yesno != 'y'))
+  if (yesno == 'Y')
     {
       string username;
       string password;
@@ -56,7 +56,7 @@ main ()
 	}
 
     }
-  else if ((yesno == 'N')|| (yesno != 'n'))
+  else if (yesno == 'N')
     {
       cout << "Goodbye for now!";
 
