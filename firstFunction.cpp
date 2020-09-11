@@ -15,14 +15,19 @@ double power(double base, double exponent)
 	return result;
 }
 
+void print_pow(double base, double exponent)
+{
+	double myPower = power(base, exponent);
+	cout <<base<<" raised to the power of "<<exponent<<" is "<< myPower <<"."<< std::endl;
+}
 
 int main()
 {
-	int base, exponent;
+	double base;
+	double exponent;
 	cout << "What is your base?: ";
 	cin >> base;
 	cout << "What is your exponent?: ";
 	cin >> exponent;
-	double myPower = power(base, exponent);
-	cout << myPower << std::endl;
+	print_pow(base, exponent);
 }
